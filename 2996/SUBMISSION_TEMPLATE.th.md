@@ -14,25 +14,25 @@
 
 หมายเลข/ชื่อโจทย์ OJ:
 
-```text
+```2996
 
 ```
 
 OJ submission ID ถ้ามีการส่งแล้ว:
 
-```text
+```#543051
 
 ```
 
 สถานะ OJ:
 
-```text
+```Pass
 Pass / Not Pass / Not Submit
 ```
 
 เวลาที่ใช้คิดและทำโจทย์ด้วยตนเอง:
 
-```text
+```0-15 minutes
 
 ```
 
@@ -72,7 +72,7 @@ More than 4 weeks
 
 ถ้ายังไม่เข้าใจโจทย์ทั้งหมด ให้เขียนสิ่งที่เข้าใจในตอนนี้ ความเข้าใจอาจยังไม่ครบหรืออาจผิดได้ แต่ต้องพยายามอธิบายอย่างจริงใจ
 
-```text
+```การรับค่า input ที่เป็น str 5ตัวเท่านั้นและทำให้คำสลับหัวกับท้ายกันและ Output ต้องออกมาต้องเป็นตัวพิมพ์เล็ก
 
 ```
 
@@ -93,9 +93,9 @@ More than 4 weeks
 สามารถเขียนเป็น pseudocode, flowchart idea หรือขั้นตอนความคิดได้
 
 ```text
-Step 1:
-Step 2:
-Step 3:
+Step 1:สร้างตัวแปร name รับค่า input ที่เป็น string
+Step 2:สร้างตัวแปร reverse สำหรับการสลับ string และเก็บค่า name ไว้และใช้ string slicing เพื่อสลับตัวอักษร
+Step 3:แสดงค่าของ reverse และใช้ .lower() เพื่อให้แสดงออกมาเป็นตัวพิมพ์เล็ก
 ```
 
 ---
@@ -114,7 +114,7 @@ Step 3:
 
 ห้ามคัดลอกคำอธิบายจากคนอื่น
 
-```text
+```เหมือนกัน เพราะทำตามแผนนี้แล้ว test case ผ่านปกติไม่ต้องแก้อะไร
 
 ```
 
@@ -134,31 +134,31 @@ Step 3:
 
 ทำไมเลือก case นี้:
 
-```text
+```ถ้าเปลี่ยนการ slicing strจาก[::-1] เป็น[-1:] เพราะผมคิดว่ามันคือ [start:stop]มันน่าจะใช้แทนกันได้
 
 ```
 
 Input:
 
-```text
+```Harry
 
 ```
 
 Expected output:
 
-```text
+```yrrah
 
 ```
 
 Actual output:
 
-```text
+```y
 
 ```
 
 Result:
 
-```text
+```Not Pass
 Pass / Not Pass
 ```
 
@@ -166,31 +166,31 @@ Pass / Not Pass
 
 ทำไมเลือก case นี้:
 
-```text
+```ถ้าหากไม่ได้ใช้ .lower() หลัง output
 
 ```
 
 Input:
 
-```text
+```Harry
 
 ```
 
 Expected output:
 
-```text
+```yrrah
 
 ```
 
 Actual output:
 
-```text
+```yrraH
 
 ```
 
 Result:
 
-```text
+```Not Pass
 Pass / Not Pass
 ```
 
@@ -198,31 +198,35 @@ Pass / Not Pass
 
 ทำไมเลือก case นี้:
 
-```text
+```ใช้การ loop ละตัวแทนการใช้ slicing str
 
-```
+```name = str(input())
+    result = ""
+    for change in name:
+        result = change + result
+    print(result.lower())
 
 Input:
 
-```text
+```Harry
 
 ```
 
 Expected output:
 
-```text
+```yrrah
 
 ```
 
 Actual output:
 
-```text
+```yrrah
 
 ```
 
 Result:
 
-```text
+```Pass
 Pass / Not Pass
 ```
 
@@ -232,7 +236,7 @@ Pass / Not Pass
 
 ใช้ AI กับโจทย์นี้หรือไม่
 
-```text
+```No
 Yes / No
 ```
 
@@ -250,7 +254,7 @@ ai_reflection.md
 
 ได้ถามเพื่อน TA ผู้สอน หรือบุคคลอื่นเพื่อขอความช่วยเหลือในโจทย์นี้หรือไม่
 
-```text
+```No
 Yes / No
 ```
 
@@ -305,10 +309,10 @@ No
 
 | Statement | Yes/No |
 |---|---|
-| I wrote this submission in my own words. | |
-| I understand my final code. | |
-| I recorded the real OJ status. | |
-| I did not copy AI-generated text directly into this file. | |
-| I did not copy code from another person. | |
-| If I received human help, I disclosed it in this file. | |
-| I submitted the final code to the OJ by myself. | |
+| I wrote this submission in my own words. |Yes|
+| I understand my final code. |Yes|
+| I recorded the real OJ status. |Yes|
+| I did not copy AI-generated text directly into this file. |Yes|
+| I did not copy code from another person. |Yes|
+| If I received human help, I disclosed it in this file. |Yes|
+| I submitted the final code to the OJ by myself. |Yes|
