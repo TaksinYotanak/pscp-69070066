@@ -14,26 +14,26 @@
 
 หมายเลข/ชื่อโจทย์ OJ:
 
-```2996
+```
 2996
 ```
 
 OJ submission ID ถ้ามีการส่งแล้ว:
 
-```#543051
-
+```
+#543051
 ```
 
 สถานะ OJ:
 
-```Pass
-Pass / Not Pass / Not Submit
+```
+Pass
 ```
 
 เวลาที่ใช้คิดและทำโจทย์ด้วยตนเอง:
 
-```0-15 minutes
-
+```
+0-15 minutes
 ```
 
 เลือกหนึ่งข้อ:
@@ -72,8 +72,8 @@ More than 4 weeks
 
 ถ้ายังไม่เข้าใจโจทย์ทั้งหมด ให้เขียนสิ่งที่เข้าใจในตอนนี้ ความเข้าใจอาจยังไม่ครบหรืออาจผิดได้ แต่ต้องพยายามอธิบายอย่างจริงใจ
 
-```การรับค่า input ที่เป็น str 5ตัวเท่านั้นและทำให้คำสลับหัวกับท้ายกันและ Output ต้องออกมาต้องเป็นตัวพิมพ์เล็ก
-
+```
+การรับค่า input ที่เป็น str 5ตัวเท่านั้นและทำให้คำสลับหัวกับท้ายกันและ Output ต้องออกมาต้องเป็นตัวพิมพ์เล็ก
 ```
 
 ---
@@ -114,8 +114,8 @@ Step 3:แสดงค่าของ reverse และใช้ .lower() เพ
 
 ห้ามคัดลอกคำอธิบายจากคนอื่น
 
-```เหมือนกัน เพราะทำตามแผนนี้แล้ว test case ผ่านปกติไม่ต้องแก้อะไร
-
+```
+เหมือนกัน เพราะทำตามแผนนี้แล้ว test case ผ่านปกติไม่ต้องแก้อะไร
 ```
 
 ---
@@ -134,100 +134,101 @@ Step 3:แสดงค่าของ reverse และใช้ .lower() เพ
 
 ทำไมเลือก case นี้:
 
-```ถ้าเปลี่ยนการ slicing strจาก[::-1] เป็น[-1:] เพราะผมคิดว่ามันคือ [start:stop]มันน่าจะใช้แทนกันได้
-
+```
+ถ้าเปลี่ยนการ slicing strจาก[::-1] เป็น[-1:] เพราะผมคิดว่ามันคือ [start:stop]มันน่าจะใช้แทนกันได้
 ```
 
 Input:
 
-```Harry
-
+```
+Harry
 ```
 
 Expected output:
 
-```yrrah
-
+```
+yrrah
 ```
 
 Actual output:
 
-```y
-
+```
+y
 ```
 
 Result:
 
-```Not Pass
-Pass / Not Pass
+```
+Not Pass
 ```
 
 ### Test Case 2
 
 ทำไมเลือก case นี้:
 
-```ถ้าหากไม่ได้ใช้ .lower() หลัง output
-
+```
+ถ้าหากไม่ได้ใช้ .lower() หลัง output
 ```
 
 Input:
 
-```Harry
-
+```
+Harry
 ```
 
 Expected output:
 
-```yrrah
-
+```
+yrrah
 ```
 
 Actual output:
 
-```yrraH
-
+```
+yrraH
 ```
 
 Result:
 
-```Not Pass
-Pass / Not Pass
+```
+Not Pass
 ```
 
 ### Test Case 3
 
 ทำไมเลือก case นี้:
 
-```ใช้การ loop ละตัวแทนการใช้ slicing str
-
-```name = str(input())
+```
+ใช้การ loop ละตัวแทนการใช้ slicing str
+name = str(input())
     result = ""
     for change in name:
         result = change + result
     print(result.lower())
+```
 
 Input:
 
-```Harry
-
+```
+Harry
 ```
 
 Expected output:
 
-```yrrah
-
+```
+yrrah
 ```
 
 Actual output:
 
-```yrrah
-
+```
+yrrah
 ```
 
 Result:
 
 ```Pass
-Pass / Not Pass
+Pass
 ```
 
 ---
