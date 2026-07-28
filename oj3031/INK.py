@@ -6,7 +6,7 @@ def main():
     results = []
     for _ in range(int(N)):
         X, Y = map(float, input().split())
-        t = math.ceil(3.1416 * (X**2 + Y**2) // S)
+        t = math.ceil(3.1416 * (X**2 + Y**2) / S)
         results.append(t)
     for r in results:
         print(r)
